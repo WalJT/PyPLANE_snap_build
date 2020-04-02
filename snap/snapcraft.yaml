@@ -70,6 +70,7 @@ parts:
       - libwayland-egl1-mesa
       - libxkbcommon-x11-0
       - libxkbcommon0
+
   desktop-qt5:
     source: https://github.com/ubuntu/snapcraft-desktop-helpers.git
     source-subdir: qt
