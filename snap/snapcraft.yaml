@@ -97,7 +97,6 @@ parts:
       - libwayland-egl1-mesa
       - libxkbcommon-x11-0
       - libxkbcommon0
-    version: "git"
     after: [desktop-qt5]
     
 apps:
