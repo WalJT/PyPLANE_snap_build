@@ -18,7 +18,7 @@ parts:
     after: [desktop-qt5]
     source: https://github.com/m-squared96/PyPLANE.git
     source-branch: dev
-    override-pull:
+    override-pull: |
       snapcraftctl pull
       datestamp=$(date +build%Y.%m.%H%M.%Z)
       snapcraftctl set-version "$datestamp"
