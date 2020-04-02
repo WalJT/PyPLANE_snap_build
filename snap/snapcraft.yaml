@@ -49,6 +49,10 @@ parts:
   pyplane:
     source: https://github.com/m-squared96/PyPLANE.git
     source-branch: dev
+    override-pull:
+      snapcraftctl pull
+      datestamp=$(date -Is)
+      snapcraftctl set-version "$datestamp"
     plugin: python
     python-version: "python3"
     python-packages:
