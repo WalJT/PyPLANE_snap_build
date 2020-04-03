@@ -20,8 +20,7 @@ parts:
     source-branch: dev
     override-pull: |
       snapcraftctl pull
-      datestamp=$(date +build%Y.%m.%H%M.%Z)
-      snapcraftctl set-version "$datestamp"
+      snapcraftctl set-version "$(git rev-parse --short HEAD)"
     plugin: python
     python-version: "python3"
     python-packages:
