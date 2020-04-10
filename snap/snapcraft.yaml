@@ -27,7 +27,7 @@ parts:
   pyplane:
     after: [desktop-qt5]
     source: https://github.com/m-squared96/PyPLANE.git
-    source-branch: dev
+    source-branch: custom_stylesheet
     override-pull: |
       snapcraftctl pull
       snapcraftctl set-version "$(git rev-parse --short HEAD)"
