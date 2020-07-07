@@ -4,7 +4,7 @@ adopt-info: pyplane
 description: |
   PyPLANE is an application written in Python for solving systems of Ordinary Differential Equations (ODEs). 
   It is intended as an open source replacement for Pplane and Dfield, two proprietary Java applications which are often used as teaching tools in academia.
-base: core18
+base: core20
 architectures:
   - build-on: amd64
     run-on: amd64
@@ -108,6 +108,6 @@ apps:
     command: bin/run.py
     command-chain:
       - bin/desktop-launch
-    plugs: [unity7, x11, wayland, opengl, gsettings, desktop, desktop-legacy]
+    plugs: [desktop, unity7, x11, wayland, opengl, gsettings, desktop-legacy]
 
 confinement: strict
