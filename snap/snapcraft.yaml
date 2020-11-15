@@ -25,7 +25,7 @@ parts:
     plugin: nil
 
   pyplane:
-    after: [desktop-qt5]
+    # after: [desktop-qt5]
     source: https://github.com/m-squared96/PyPLANE.git
     source-branch: dev
     override-pull: |
