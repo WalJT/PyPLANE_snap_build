@@ -108,8 +108,8 @@ apps:
       - kde-neon
     adapter: full
     command: bin/run.py
-    command-chain:
-      - bin/desktop-launch
+    # command-chain:
+      # - bin/desktop-launch
     plugs: [desktop, unity7, x11, wayland, opengl, gsettings, desktop-legacy]
 
 confinement: strict
