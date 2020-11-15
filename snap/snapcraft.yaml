@@ -38,13 +38,13 @@ parts:
     plugin: python
     # python-version: "python3" # Deprecated as of core20
     python-packages:
-      - wheel
       - numpy
       - sympy
       - scipy
       - matplotlib
       - pyqt5==5.14.1
     stage-packages:
+      - python3-wheel
       - libfreetype6
       - libpng16-16
       - libgl1-mesa-glx
