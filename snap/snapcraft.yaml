@@ -32,7 +32,7 @@ parts:
       snapcraftctl pull
       snapcraftctl set-version "$(git rev-parse --short HEAD)"
     plugin: python
-    python-version: "python3"
+    # python-version: "python3"
     python-packages:
       - numpy
       - sympy
