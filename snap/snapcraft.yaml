@@ -38,11 +38,11 @@ parts:
     plugin: python
     # python-version: "python3" # Deprecated as of core20
     python-packages:
-      - numpy
-      - sympy
-      - scipy
-      - matplotlib
-      - pyqt5
+      - numpy==1.17.0
+      - sympy==1.4
+      - scipy==1.3.1
+      - matplotlib==3.1.1
+      - PyQt5==5.13.0
     stage-packages:
       - libfreetype6
       - libpng16-16
