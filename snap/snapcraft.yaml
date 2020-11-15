@@ -25,7 +25,6 @@ parts:
     plugin: nil
 
   pyplane:
-    # after: [desktop-qt5]
     source: https://github.com/m-squared96/PyPLANE.git
     source-branch: dev
     override-pull: |
@@ -79,28 +78,6 @@ parts:
       - libwayland-egl1-mesa
       - libxkbcommon-x11-0
       - libxkbcommon0
-
-  # desktop-qt5:
-  #   source: https://github.com/ubuntu/snapcraft-desktop-helpers.git
-  #   source-subdir: qt
-  #   plugin: make
-  #   make-parameters: ["FLAVOR=qt5"]
-  #   build-packages:
-  #     - qtbase5-dev
-  #     - dpkg-dev
-  #   stage-packages:
-  #     - libxkbcommon0
-  #     - ttf-ubuntu-font-family
-  #     - dmz-cursor-theme
-  #     - light-themes
-  #     - adwaita-icon-theme
-  #     - gnome-themes-standard
-  #     - shared-mime-info
-  #     - libqt5gui5
-  #     - libgdk-pixbuf2.0-0
-  #     - libqt5svg5 # for loading icon themes which are svg
-  #     - try: [appmenu-qt5] # not available on core18
-  #     - locales-all
     
 apps:
   pyplane:
@@ -108,8 +85,6 @@ apps:
       - kde-neon
     adapter: full
     command: bin/run.py
-    # command-chain:
-      # - bin/desktop-launch
     plugs: [desktop, unity7, x11, wayland, opengl, gsettings, desktop-legacy]
 
 confinement: strict
