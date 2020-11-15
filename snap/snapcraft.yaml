@@ -38,6 +38,7 @@ parts:
     plugin: python
     # python-version: "python3" # Deprecated as of core20
     python-packages:
+      - wheel
       - numpy
       - sympy
       - scipy
