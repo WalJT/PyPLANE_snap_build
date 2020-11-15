@@ -1,3 +1,7 @@
+#TODO: look into "bdist_wheel" errors
+#TODO: Dependencies: libgdk-x11-2.0.so.0, libgtk-x11-2.0.so.0, libQt5Gamepad.so.5, libQt5MultimediaQuick.so.5
+#TODO: error: cannot pack "/root/prime": mksquashfs call failed: Could not create destination file: Operation not permitted
+
 name: pyplane
 summary: PyPLANE
 adopt-info: pyplane
