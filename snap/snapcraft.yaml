@@ -42,8 +42,8 @@ parts:
       - sympy
       - scipy
       - matplotlib
-      - PyQt5==5.13.0
     stage-packages:
+      - python3-pyqt5
       - libfreetype6
       - libpng16-16
       - libgl1-mesa-glx
