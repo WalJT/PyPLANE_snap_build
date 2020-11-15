@@ -36,7 +36,7 @@ parts:
       snapcraftctl pull
       snapcraftctl set-version "$(git rev-parse --short HEAD)"
     plugin: python
-    # python-version: "python3"
+    # python-version: "python3" # Deprecated as of core20
     python-packages:
       - numpy
       - sympy
