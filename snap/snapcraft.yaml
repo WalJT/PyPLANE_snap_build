@@ -25,7 +25,7 @@ parts:
 
   pyplane:
     source: https://github.com/m-squared96/PyPLANE.git
-    source-branch: dev
+    source-branch: feature/iss54-add-gallery-of-ODE-systems
     override-pull: |
       snapcraftctl pull
       snapcraftctl set-version "$(git rev-parse --short HEAD)"
