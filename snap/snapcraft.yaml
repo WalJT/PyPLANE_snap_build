@@ -28,7 +28,7 @@ parts:
     source-branch: dev
     override-pull: |
       snapcraftctl pull
-      snapcraftctl set-version "$(git rev-parse --short HEAD)"
+      snapcraftctl set-version "$(date +%Y%m%d)-$(git rev-parse --short HEAD)"
     plugin: python
     python-version: "python3"
     python-packages:
