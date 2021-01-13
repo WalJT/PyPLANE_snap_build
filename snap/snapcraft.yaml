@@ -31,13 +31,13 @@ parts:
       snapcraftctl set-version "$(date +%Y%m%d)-$(git rev-parse --short HEAD)"
     plugin: python
     python-version: "python3"
-    python-packages:
+    python-packages: # These will be installed in the build VM using pip
       - numpy
       - sympy
       - scipy
       - matplotlib
       - pyqt5
-    stage-packages:
+    stage-packages: # These 
       - libfreetype6
       - libpng16-16
       - libgl1-mesa-glx
@@ -81,7 +81,7 @@ parts:
 apps:
   pyplane:
     extensions:
-      - kde-neon
+      - kde-neon # Allows PyPLANE to use the kde-frameworks snap (inherit Qt theme and UI scale factor from operating system)
     adapter: full
     command: bin/run.py
     plugs: [desktop, unity7, x11, wayland, opengl, gsettings, desktop-legacy]
