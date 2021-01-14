@@ -8,16 +8,6 @@ base: core18
 architectures:
   - build-on: [amd64]
 
-# plugs:
-#   gtk-3-themes:
-#     interface: content
-#     target: $SNAP/data-dir/themes
-#     default-provider: gtk-common-themes:gtk-3-themes
-#   icon-themes:
-#     interface: content
-#     target: $SNAP/data-dir/icons
-#     default-provider: gtk-common-themes:icon-themes
-
 parts:
   build-trigger:
     source: https://github.com/m-squared96/PyPLANE.git
