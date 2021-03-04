@@ -21,12 +21,8 @@ parts:
       snapcraftctl set-version "$(date +%Y%m%d)-$(git rev-parse --short HEAD)"
     plugin: python
     python-version: "python3"
-    python-packages: # These will be installed in the build VM using pip
-      - numpy
-      - sympy
-      - scipy
-      - matplotlib
-      - pyqt5
+    requirements:
+      - requirements.txt
     stage-packages: # These 
       - libfreetype6
       - libpng16-16
