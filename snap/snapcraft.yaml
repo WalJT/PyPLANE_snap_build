@@ -23,7 +23,7 @@ parts:
     python-version: "python3"
     requirements:
       - requirements.txt
-    stage-packages: # These 
+    stage-packages:
       - libfreetype6
       - libpng16-16
       - libgl1-mesa-glx
