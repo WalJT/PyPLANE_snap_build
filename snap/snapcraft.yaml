@@ -6,7 +6,7 @@ description: |
   It is intended as an open source replacement for Pplane and Dfield, two proprietary Java applications which are often used as teaching tools in academia.
 base: core18
 architectures:
-  - build-on: [amd64, arm64]
+  - build-on: [amd64]
 
 parts:
   build-trigger:
