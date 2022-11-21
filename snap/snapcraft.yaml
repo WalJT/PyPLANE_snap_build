@@ -15,7 +15,7 @@ parts:
 
   pyplane:
     source: https://github.com/m-squared96/PyPLANE.git
-    source-branch: dev
+    source-branch: iss76-help-dropdown
     override-pull: |
       snapcraftctl pull
       snapcraftctl set-version "$(date +%Y%m%d)-$(git rev-parse --short HEAD)"
